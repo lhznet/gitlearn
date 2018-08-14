@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		// var arr = [1,7,5,2,3,2,0];
+		// console.debug(arr.lastIndexOf(2));
+		// console.debug(arr.lastIndexOf(2,2));
+
+		// // console.debug("abcabc".lastIndexOf("abc", 3));
+
+		// arr.forEach(function(item, index, a) {
+		// 	console.debug(item);
+		// 	console.debug(index);
+		// 	console.debug(a);
+		// 	console.debug(this);
+		// });
+		// console.debug("------------------------------------");
+		// function test(){
+		// 	// arguments 伪数组
+		// 	// for(var i = 0; i < arguments.length; i++){
+		// 	// 	console.debug(arguments[i]);
+		// 	// }
+		// 	// for(var i in arguments){
+		// 	// 	console.debug(arguments[i]);				
+		// 	// }
+
+		// 	// Array.prototype.forEach.call(arguments, function(item, index, a){
+		// 	[].forEach.call(arguments, function(item, index, a){
+		// 		console.debug(item);
+		// 		console.debug(index);
+		// 		console.debug(a);
+		// 		console.debug(this);
+		// 	});
+			
+		// }
+		// test(123,123.456,true,"abc",null, undefined);
+
+		// window.onload = function(){
+		// 	var lis = document.querySelectorAll("li");
+		// 	console.debug(lis);
+		// 	console.debug(Object.prototype.toString.call(lis));
+		// 	console.debug(lis instanceof Array);
+		// 	// lis.forEach(function(element, index, lis) {
+		// 	// 	console.debug(element);
+		// 	// 	console.debug(index);
+		// 	// 	console.debug(lis);
+		// 	// });
+
+		// 	// [].forEach.call(lis, function(item, index, lis){
+	
+		// 	// });
+		// }
+
+		var arr = [1,2,3,4];
+		// var result = arr.map(function(item, index, arr){
+		// 	return item * 2;
+		// });
+		// console.debug(result);
+
+		// var result = arr.filter(function(item, index, arr){
+		// 	return item > 2;
+		// });
+		// console.debug(result);
+
+		// var result = arr.every(function(item){
+		// 	return item > -2;
+		// });
+		// console.debug(result);
+
+		// var result = arr.some(function(item){
+		// 	return item > 6;
+		// });
+		// console.debug(result);
+
+		// var result = arr.reduce(function(previous, current, index, arr){
+		// 	console.debug(previous);
+		// 	console.debug(current);
+		// 	console.debug(index);
+		// 	console.debug(arr);
+		// 	return 555;
+		// },0);
+
+		// console.debug(result);
+
+
+		// var result = arr.reduceRight(function(previous, current, index, arr){
+		// 	console.debug(previous);
+		// 	console.debug(current);
+		// 	console.debug(index);
+		// 	console.debug(arr);
+		// 	// return 555;
+		// });
+
+		// console.debug(result);
+
+		var sum = arr.reduce(function(previous, current){
+			return previous + current;
+
+		});
+		console.debug(sum);
+
+		var arr = [
+			[1,2],
+			[3,4],
+			[5,6]
+		]; //-> [1,2,3,4,5,6]
+
+		var result =  arr.reduce(function(previous, current){
+			return previous.concat(current); //-> [1,2,3,4]
+		});
+		console.debug(result);
+
+
+	</script>
+</head>
+<body>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+</body>
+</html>
